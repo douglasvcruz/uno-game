@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100svh;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 0, 0, 0.671)
+}
+
+.test:active {
+  transform: translateY(-250px) translateX(-100px) scale(0.8);
+  transition: transform 0.3s ease;
+}
