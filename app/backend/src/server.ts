@@ -47,6 +47,11 @@ io.on("connection", (socket) => {
     io.emit("firstCard", card);
   });
 
+  // socket.on("playerCards", (players) => {
+  //   playerCards = players;
+  //   io.emit("playerCards", playerCards);
+  // });
+
   socket.on("deck", (cards) => {
     randomCards = cards;
     io.emit("deck", cards);
